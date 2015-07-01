@@ -1,7 +1,9 @@
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 namespace facebook {
 
-    void _init() {
-
+    void _activateApp() {
+        [FBSDKAppEvents activateApp];
     }
 }
 

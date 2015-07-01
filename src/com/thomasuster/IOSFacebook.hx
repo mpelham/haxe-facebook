@@ -2,19 +2,19 @@ package com.thomasuster;
 import cpp.Lib;
 class IOSFacebook {
 
-    static var _init:Dynamic;
+    static var _activateApp:Dynamic;
 
     public function new():Void {}
 
-    public function init() {
+    public function activateApp() {
         load();
-        _init();
+        _activateApp();
     }
 
     function load():Void {
-        if(_init == null) {
+        if(_activateApp == null) {
             #if ios
-            _init = Lib.load("facebook","init",0);
+            _activateApp = Lib.load("facebook","activateApp",0);
             #end
         }
     }

@@ -3,6 +3,6 @@
 
 namespace facebook {
 
-	void _init();
+	void _activateApp();
 }
 #endif

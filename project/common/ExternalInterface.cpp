@@ -6,10 +6,10 @@
 
 using namespace facebook;
 
-void init(){
-    _init();
+void activateApp(){
+    _activateApp();
 }
-DEFINE_PRIM (init,0);
+DEFINE_PRIM (activateApp,0);
 
 extern "C" void facebook_main () {
 }
