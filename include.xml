@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+
+    <classpath name="src" />
+
+    <section if="android">
+
+        <dependency name="haxe-applovin" path="android" if="android" />
+        <android extension="com.thomasuster.Applovin" />
+
+    </section>
+
+    <section if="ios">
+        <ndll name="facebook" if="ios"/>
+        <dependency name="FBSDKCoreKit.framework" path="../../frameworks" sourceTree = "group"/>
+        <frameworkSearchPaths value="frameworks" />
+    </section>
+
+</extension>
