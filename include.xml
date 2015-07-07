@@ -5,8 +5,8 @@
 
     <section if="android">
 
-        <dependency name="haxe-applovin" path="android" if="android" />
-        <android extension="com.thomasuster.Applovin" />
+        <dependency name="haxe-facebook" path="android" if="android" />
+        <android extension="com.thomasuster.Facebook" />
 
     </section>
 
